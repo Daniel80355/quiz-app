@@ -18,7 +18,7 @@ const questions = [
 
 let currentQuestion = 0;
 let score = 0;
-let timeLeft = 60;
+let timeLeft = 10;
 let timer;
 
 const questionElement = document.getElementById("question");
@@ -30,7 +30,7 @@ const result = document.getElementById("result");
 
 function loadQuestion() {
     clearInterval(timer);
-    timeLeft = 60;
+    timeLeft = 10;
     timerElement.textContent = timeLeft;
 
     timer = setInterval(() => {
